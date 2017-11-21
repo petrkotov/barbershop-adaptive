@@ -1,1 +1,1 @@
-# barbershop-adaptive
+https://petrkotov.github.io/barbershop-adaptive/

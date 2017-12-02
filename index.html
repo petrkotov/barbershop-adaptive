@@ -14,7 +14,11 @@
     <header class="page-header">
       <h1 class="visually-hidden">Барбершоп Бородинский - истинно мужская классика</h1>
       <div class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп Бородинский">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+        </picture>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -70,11 +74,11 @@
               <h3 class="advantages__item-title">Быстро</h3>
               <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
             </li>
-            <li class="advantages__item  advantages__item--fast  slider__cool">
+            <li class="advantages__item  advantages__item--cool  slider__item">
               <h3 class="advantages__item-title">Круто</h3>
               <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
             </li>
-            <li class="advantages__item  advantages__item--fast  slider__pricy">
+            <li class="advantages__item  advantages__item--pricy  slider__item">
               <h3 class="advantages__item-title">Дорого</h3>
               <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
             </li>
@@ -109,7 +113,7 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrapper  slider">
-          <h2 class="reviews__title">Отызвы о нас</h2>
+          <h2 class="reviews__title">Отзывы о нас</h2>
           <a class="reviews__write  btn" href="">Оставить свой</a>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
@@ -117,21 +121,21 @@
           <div class="reviews__items">
             <blockquote class="reviews__item  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+                <img src="img/travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
               </div>
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
             </blockquote>
             <blockquote class="reviews__item  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Джона Смита">
+                <img src="img/diesel.jpg" width="50" height="33" alt="Фото Джона Смита">
               </div>
               <cite class="reviews__author-name">Джон Смит</cite>
               <p>Отличную стрижку мне сделали ребята.</p>
             </blockquote>
             <blockquote class="reviews__item  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
+                <img src="img/travis.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
               </div>
               <cite class="reviews__author-name">Иван Бородайло</cite>
               <p>В Бородинском ваша борода в надежных руках!</p>
@@ -140,9 +144,9 @@
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
           <div class="reviews__toggles  slider__toggles">
-            <label class="slider__toggle" for="reviews-input-1">1</label>
-            <label class="slider__toggle" for="reviews-input-2">2</label>
-            <label class="slider__toggle" for="reviews-input-3">3</label>
+            <label class="slider__toggle" for="reviews-input-1"></label>
+            <label class="slider__toggle" for="reviews-input-2"></label>
+            <label class="slider__toggle" for="reviews-input-3"></label>
           </div>
         </div>
       </section>
@@ -151,15 +155,16 @@
       <div class="page-footer__wrapper">
         <p class="page-footer__contacts">
           <div>Барбершоп Бородинский</div><br>
-          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-          <a href="tel:+380676958013"><span class="page-footer__contacts-hidden">Тел.:</span>+38 (067) 695-80-13</a>
+          <p class="page-footer__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br></p>
+          <a class="btn  page-footer__contacts-hidden" href="tel:+380676958013">+38 (067) 695-80-13</a>
         </p>
         <p class="page-footer__social">
           <span class="social-links">
             <a class="social-link  social-link--vk" href="https://vk.com">Мы в Вконтакте</a>
             <a class="social-link  social-link--fb" href="https://facebook.com">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--in" href="https://instagram.com">Мы в Инстаграме</a>
+            <a class="social-link  social-link--ig" href="https://instagram.com">Мы в Инстаграме</a>
           </span>
+        </p>
           <p class="page-footer__copyright">
             Разработано:
             <a class="btn  page-footer__copyright-link" href="">HTML Academy</a>
